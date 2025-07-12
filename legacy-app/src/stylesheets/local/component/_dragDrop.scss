@@ -1,0 +1,34 @@
+.dragdrop-wrapper {
+  grid-gap: 10px;
+  display: flex;
+  width: 100%;
+  .dragdrop-card {
+    border: 1px dashed #9fb4bf;
+    padding: 10px;
+    background-color: #fff;
+    min-height: 80vh;
+
+    .chart_view_wrapper,
+    .metrics_card_wrapper {
+      cursor: all-scroll;
+    }
+    &.left-box {
+      width: 70%;
+      .metricsCard {
+        width: calc(100% / 4 - 20px);
+      }
+    }
+    &.right-box {
+      width: 30%;
+      .metricsCard {
+        width: calc(100% / 2 - 20px);
+      }
+    }
+    .chart_view_wrapper {
+      .chat_main {
+        width: 100%;
+        margin: 0 0 10px;
+      }
+    }
+  }
+}

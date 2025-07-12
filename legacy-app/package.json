@@ -1,0 +1,80 @@
+{
+  "name": "perfscan",
+  "version": "1.2.0",
+  "private": true,
+  "homepage": "https://staging.perfscan.com/",
+  "dependencies": {
+    "@apollo/client": "^3.12.5",
+    "@react-pdf/renderer": "^2.1.1",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "apexcharts": "^3.54.1",
+    "axios": "^1.5.1",
+    "date-fns": "^2.29.1",
+    "graphql-ws": "^5.16.2",
+    "http-proxy-middleware": "^2.0.6",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "node-sass": "^9.0.0",
+    "primeflex": "^3.3.1",
+    "primeicons": "^5.0.0",
+    "primereact": "^7.2.1",
+    "react": "^17.0.2",
+    "react-apexcharts": "^1.4.0",
+    "react-beforeunload": "^2.5.2",
+    "react-checkbox-tree": "^1.7.3",
+    "react-color": "^2.19.3",
+    "react-content-loader": "^6.2.0",
+    "react-date-range": "^1.4.0",
+    "react-datepicker": "^4.8.0",
+    "react-dom": "^17.0.2",
+    "react-google-charts": "^4.0.0",
+    "react-icons": "^4.3.1",
+    "react-loading-screen": "0.0.17",
+    "react-loading-skeleton": "^3.5.0",
+    "react-metismenu": "^1.4.0",
+    "react-modal": "^3.14.4",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "react-spinners": "^0.13.6",
+    "react-transition-group": "^4.4.2",
+    "reactstrap": "^9.0.1",
+    "redis": "^4.7.0",
+    "socket.io-client": "^4.7.4",
+    "styled-components": "^5.3.5",
+    "swiper": "^9.1.1",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "json-server": "json-server --watch db.json --port 3010",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "react-error-overlay": "^6.0.9"
+  }
+}

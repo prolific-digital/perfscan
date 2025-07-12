@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "services/*": ["./services/*"],
+            "store/*" : ["./store/*"],
+            "typeCodes/*": ["./typeCodes/*"],
+            "components/*": ["./app/components/*"],
+            "helpers/*":["./helpers/*"],
+            "utils/*": ["./utils/*"],
+            "hooks/*": ["./hooks/*"]
+        }
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": ["node_modules"]
+}

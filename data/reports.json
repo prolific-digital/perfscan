@@ -1,0 +1,173 @@
+{
+  "savedReports": [
+    {
+      "id": 1,
+      "name": "Weekly Executive Summary",
+      "type": "historical",
+      "description": "Weekly performance overview for management",
+      "createdBy": "admin",
+      "createdAt": "2025-01-15T10:00:00Z",
+      "lastModified": "2025-07-10T14:30:00Z",
+      "configuration": {
+        "systems": ["PROD-SYS-01", "PROD-SYS-02"],
+        "dateRange": "last_7_days",
+        "metrics": ["cpu", "memory", "disk", "response5250"],
+        "includeCharts": true,
+        "includeSummary": true,
+        "includeTopJobs": true
+      }
+    },
+    {
+      "id": 2,
+      "name": "Monthly Capacity Report",
+      "type": "capacity",
+      "description": "Monthly capacity planning and projections",
+      "createdBy": "mjohnson",
+      "createdAt": "2025-02-01T09:00:00Z",
+      "lastModified": "2025-07-01T08:00:00Z",
+      "configuration": {
+        "systems": ["PROD-SYS-01", "DEV-SYS-01", "TEST-SYS-01"],
+        "projectionPeriod": "12_months",
+        "growthScenarios": ["conservative", "expected", "aggressive"],
+        "includeRecommendations": true
+      }
+    },
+    {
+      "id": 3,
+      "name": "Problem Analysis Report",
+      "type": "problem_determination",
+      "description": "Detailed analysis for troubleshooting",
+      "createdBy": "jsmith",
+      "createdAt": "2025-03-15T11:30:00Z",
+      "lastModified": "2025-07-11T16:45:00Z",
+      "configuration": {
+        "systems": ["TEST-SYS-01"],
+        "dateRange": "custom",
+        "startDate": "2025-07-10",
+        "endDate": "2025-07-12",
+        "includeAllMetrics": true,
+        "detailLevel": "verbose"
+      }
+    }
+  ],
+  "scheduledReports": [
+    {
+      "id": 1,
+      "reportId": 1,
+      "name": "Weekly Executive Summary - Scheduled",
+      "schedule": {
+        "frequency": "weekly",
+        "dayOfWeek": "Monday",
+        "time": "08:00",
+        "timezone": "America/Chicago"
+      },
+      "distribution": {
+        "recipients": ["admin@perfscan.com", "management@company.com"],
+        "format": "pdf",
+        "subject": "Weekly Performance Report - {{date}}"
+      },
+      "enabled": true,
+      "lastRun": "2025-07-08T08:00:00Z",
+      "nextRun": "2025-07-15T08:00:00Z"
+    },
+    {
+      "id": 2,
+      "reportId": 2,
+      "name": "Monthly Capacity Report - Scheduled",
+      "schedule": {
+        "frequency": "monthly",
+        "dayOfMonth": 1,
+        "time": "09:00",
+        "timezone": "America/Chicago"
+      },
+      "distribution": {
+        "recipients": ["mjohnson@company.com", "capacity-team@company.com"],
+        "format": "pdf",
+        "subject": "Monthly Capacity Planning Report - {{month}}"
+      },
+      "enabled": true,
+      "lastRun": "2025-07-01T09:00:00Z",
+      "nextRun": "2025-08-01T09:00:00Z"
+    }
+  ],
+  "reportTemplates": [
+    {
+      "id": 1,
+      "name": "Executive Summary Template",
+      "type": "historical",
+      "coverTemplate": "template_1",
+      "brandingEnabled": true,
+      "sections": [
+        {
+          "name": "overview",
+          "title": "Executive Overview",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "name": "cpu_analysis",
+          "title": "CPU Performance Analysis",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "name": "memory_analysis",
+          "title": "Memory Utilization",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "name": "disk_analysis",
+          "title": "Disk Performance",
+          "enabled": true,
+          "order": 4
+        },
+        {
+          "name": "response_time",
+          "title": "Interactive Response Times",
+          "enabled": true,
+          "order": 5
+        },
+        {
+          "name": "top_jobs",
+          "title": "Resource Intensive Jobs",
+          "enabled": true,
+          "order": 6
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Capacity Planning Template",
+      "type": "capacity",
+      "coverTemplate": "template_2",
+      "brandingEnabled": true,
+      "sections": [
+        {
+          "name": "current_state",
+          "title": "Current System State",
+          "enabled": true,
+          "order": 1
+        },
+        {
+          "name": "projections",
+          "title": "Capacity Projections",
+          "enabled": true,
+          "order": 2
+        },
+        {
+          "name": "scenarios",
+          "title": "Growth Scenarios",
+          "enabled": true,
+          "order": 3
+        },
+        {
+          "name": "recommendations",
+          "title": "Recommendations",
+          "enabled": true,
+          "order": 4
+        }
+      ]
+    }
+  ]
+}

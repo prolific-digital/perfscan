@@ -1,0 +1,102 @@
+[
+	{
+		"jobname": "SK-ASC059P",
+		"jobtype": "faults",
+		"total": "6.67"
+	},
+	{
+		"jobname": "SK-ASC034P",
+		"jobtype": "faults",
+		"total": "0.71"
+	},
+	{
+		"jobname": "SK-ASC058P",
+		"jobtype": "faults",
+		"total": "0.68"
+	},
+	{
+		"jobname": "CFSLT00",
+		"jobtype": "faults",
+		"total": "0.51"
+	},
+	{
+		"jobname": "XREFGOLD90",
+		"jobtype": "faults",
+		"total": "0.25"
+	},
+	{
+		"jobname": "PRTBOS1",
+		"jobtype": "faults",
+		"total": "0.20"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "faults",
+		"total": "0.20"
+	},
+	{
+		"jobname": "PRTBOS",
+		"jobtype": "faults",
+		"total": "0.19"
+	},
+	{
+		"jobname": "PRTARB",
+		"jobtype": "faults",
+		"total": "0.18"
+	},
+	{
+		"jobname": "PRTCTR",
+		"jobtype": "faults",
+		"total": "0.17"
+	},
+	{
+		"jobname": "PRTCHK",
+		"jobtype": "faults",
+		"total": "0.16"
+	},
+	{
+		"jobname": "PRTFLT",
+		"jobtype": "faults",
+		"total": "0.14"
+	},
+	{
+		"jobname": "PRTCE",
+		"jobtype": "faults",
+		"total": "0.14"
+	},
+	{
+		"jobname": "QSPRC00001",
+		"jobtype": "faults",
+		"total": "0.14"
+	},
+	{
+		"jobname": "ADJMMRREQ",
+		"jobtype": "faults",
+		"total": "0.12"
+	},
+	{
+		"jobname": "PRTL4",
+		"jobtype": "faults",
+		"total": "0.11"
+	},
+	{
+		"jobname": "QZDASOINIT",
+		"jobtype": "faults",
+		"total": "0.10"
+	},
+	{
+		"jobname": "PRTJAC",
+		"jobtype": "faults",
+		"total": "0.09"
+	},
+	{
+		"jobname": "XREFGOLD90",
+		"jobtype": "faults",
+		"total": "0.09"
+	},
+	{
+		"jobname": "QZDASOINIT",
+		"jobtype": "faults",
+		"total": "0.08"
+	}
+]

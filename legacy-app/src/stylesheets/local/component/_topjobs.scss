@@ -1,0 +1,30 @@
+.topjobs-conatiner {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 0 rgba(37, 117, 252, 0.2);
+  padding: 10px;
+  margin-bottom: 10px;
+  min-height: 20rem;
+  width: 100%;
+  .top-jobs-nav {
+    margin: 10px 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.filters {
+  display: flex;
+  margin-bottom: 10px;
+  .form_group {
+    min-width: 10rem;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    white-space: nowrap;
+    select,
+    input {
+      margin: 0 10px;
+    }
+  }
+}

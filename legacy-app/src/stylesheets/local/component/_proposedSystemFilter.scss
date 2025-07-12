@@ -1,0 +1,43 @@
+.curSystem {
+    position: relative;
+    margin-left: 5px;
+    bottom: 8px
+}
+
+.numCores{
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    flex-wrap: wrap;
+    height: 90px;
+    justify-content: space-around;
+}
+
+.cores {
+    display: flex;
+    flex-direction: row;
+    .label {
+        font-size: 1rem;
+        text-align: right;
+        margin-top: 10px;
+        padding: 5px;
+        font-family: "Cerebri Sans Book";
+        width: 100px;
+    }
+    .labelCurrent {
+        font-size: 1rem;
+        text-align: left;
+        margin-top: 7px;
+        padding: 5px;
+        font-family: "Cerebri Sans Book";
+        width: 200px;
+    }
+}
+.busyDays {
+    margin-top: 15px;
+}
+
+.autoSys {
+    font-weight: bold;
+    color: darkblue;
+}

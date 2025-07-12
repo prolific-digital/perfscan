@@ -1,0 +1,241 @@
+.setting-container {
+  .setting-options-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .setting-options {
+      background: #fff;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 1rem;
+      min-height: 20rem;
+      border: 1px solid #edf2f9;
+      width: 100%;
+      &.change-events {
+        min-width: 70%;
+        .default-core-metrics {
+          width: 100%;
+        }
+      }
+      &.manage-systems,
+      &.change-events {
+        text-align: left;
+      }
+      .default-core-metrics {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        .system-option {
+          display: flex;
+          justify-content: flex-start;
+        }
+        .nav-tabs {
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+        .tab-content {
+          width: 100%;
+          .form-check {
+            text-align: left;
+          }
+          .form-control {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      .branding {
+        width: 100%;
+      }
+    }
+  }
+}
+.metrics_options_container {
+  position: relative;
+  display: flex;
+  border: 1px solid #cfe1e8;
+  margin-bottom: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  &.no-border {
+    border-width: 0;
+  }
+
+  .metric_options {
+    flex: 1;
+    border-right: 1px solid #cfe1e8;
+
+    .metric_header {
+      color: #121b2b;
+      font-weight: 600;
+      text-align: center;
+      border-bottom: 1px solid #cfe1e8;
+      padding: 10px;
+      background-color: #75c5f0;
+    }
+    .metric_body {
+      padding: 10px;
+    }
+  }
+}
+
+.metric_options_alerts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+.alert_metric_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notification {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 0.6rem;
+  justify-content: center;
+  min-height: 0;
+  border: none;
+}
+
+.p-multiselect {
+  text-align: left;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.column1 {
+  float: left;
+  width: 30%;
+}
+.column2 {
+  float: left;
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.angry-grid {
+  display: grid;
+
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 0px;
+  height: 100%;
+}
+
+#item-0 {
+  background-color: #7bd57d;
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 2;
+  grid-column-end: 7;
+}
+#item-1 {
+  background-color: #8febab;
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+#item-2 {
+  background-color: #9d7bbe;
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 7;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.report_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+
+  .report_field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px;
+
+    .report_field_label {
+      display: flex;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+    .report_field_input {
+      display: flex;
+      margin-right: 10px;
+      max-width: 300px;
+      width: 300px;
+    }
+  }
+}
+
+.model_config {
+  .label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .text {
+    width: 300px;
+    border: 1px solid #d8d6d6;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}

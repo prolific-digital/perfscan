@@ -1,0 +1,19 @@
+.p-datatable {
+  .p-datatable-thead {
+    > tr > th,
+    table thead {
+      background: hsl(201, 80%, 70%) !important;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  .p-datatable-tbody {
+    > tr > td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  &.p-datatable-striped .p-datatable-tbody > tr.p-row-odd {
+    background-color: #f7f7f7;
+  }
+}

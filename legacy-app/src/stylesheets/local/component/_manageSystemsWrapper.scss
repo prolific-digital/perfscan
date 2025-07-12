@@ -1,0 +1,35 @@
+.manage-systems-wrapper {
+  position: relative;
+  min-height: 20rem;
+  width: 100%;
+  .btn-primary {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: auto;
+  }
+  .systems-table {
+    &.p-datatable {
+      .p-datatable-thead > tr > th,
+      .p-datatable-thead table thead {
+        background: hsl(201, 80%, 70%);
+
+        font-size: 10px !important;
+      }
+
+      .p-datatable-tbody > tr > td {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.manage-events-list {
+  position: relative;
+  min-height: 20rem;
+  width: 100%;
+  .btn-primary {
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: auto;
+  }
+}

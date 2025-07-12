@@ -1,0 +1,164 @@
+{
+  "timestamp": "2025-07-12T10:30:00Z",
+  "systems": {
+    "1": {
+      "systemId": 1,
+      "systemName": "PROD-SYS-01",
+      "cpu": {
+        "utilization": 67.5,
+        "cpuMs": 125.3,
+        "numCores": 8,
+        "cpw": 18700,
+        "trend": "stable"
+      },
+      "memory": {
+        "totalGB": 128,
+        "usedGB": 98.5,
+        "utilization": 76.9,
+        "faultingRate": 0.12,
+        "poolFaulting": {
+          "*BASE": 0.05,
+          "*MACHINE": 0.02,
+          "*INTERACT": 0.03,
+          "*SPOOL": 0.02
+        }
+      },
+      "disk": {
+        "armUtilization": 45.2,
+        "responseTime": 8.5,
+        "operations": 1250,
+        "readWriteRatio": 0.65,
+        "spaceUtilization": 72.3,
+        "cacheHitPercent": 94.5
+      },
+      "network": {
+        "ethernetUtilization": 32.5,
+        "packetsPerSec": 15420,
+        "bytesPerSec": 125000000
+      },
+      "response5250": {
+        "avgResponseTime": 0.125,
+        "peakResponseTime": 0.450,
+        "transactionsPerSec": 85
+      },
+      "jobs": {
+        "totalActive": 1245,
+        "batchActive": 450,
+        "interactiveActive": 795,
+        "cpuPercentByJob": [
+          {"jobName": "QZDASOINIT", "user": "QUSER", "cpuPercent": 12.5},
+          {"jobName": "BACKUP_JOB", "user": "QSYSOPR", "cpuPercent": 8.3},
+          {"jobName": "QBATCH", "user": "QSYS", "cpuPercent": 6.7},
+          {"jobName": "APP_SERVER1", "user": "APPUSER", "cpuPercent": 5.2},
+          {"jobName": "QINTER", "user": "QSYS", "cpuPercent": 4.8}
+        ]
+      }
+    },
+    "2": {
+      "systemId": 2,
+      "systemName": "DEV-SYS-01",
+      "cpu": {
+        "utilization": 45.2,
+        "cpuMs": 85.7,
+        "numCores": 4,
+        "cpw": 11200,
+        "trend": "increasing"
+      },
+      "memory": {
+        "totalGB": 64,
+        "usedGB": 42.5,
+        "utilization": 66.4,
+        "faultingRate": 0.08,
+        "poolFaulting": {
+          "*BASE": 0.03,
+          "*MACHINE": 0.02,
+          "*INTERACT": 0.02,
+          "*SPOOL": 0.01
+        }
+      },
+      "disk": {
+        "armUtilization": 32.5,
+        "responseTime": 6.2,
+        "operations": 850,
+        "readWriteRatio": 0.72,
+        "spaceUtilization": 58.7,
+        "cacheHitPercent": 96.2
+      },
+      "network": {
+        "ethernetUtilization": 18.5,
+        "packetsPerSec": 8520,
+        "bytesPerSec": 65000000
+      },
+      "response5250": {
+        "avgResponseTime": 0.095,
+        "peakResponseTime": 0.320,
+        "transactionsPerSec": 45
+      },
+      "jobs": {
+        "totalActive": 652,
+        "batchActive": 150,
+        "interactiveActive": 502,
+        "cpuPercentByJob": [
+          {"jobName": "DEV_COMPILE", "user": "DEVUSER", "cpuPercent": 15.2},
+          {"jobName": "QZDASOINIT", "user": "QUSER", "cpuPercent": 8.5},
+          {"jobName": "TEST_JOB", "user": "TESTUSER", "cpuPercent": 5.3},
+          {"jobName": "QBATCH", "user": "QSYS", "cpuPercent": 4.2},
+          {"jobName": "QINTER", "user": "QSYS", "cpuPercent": 3.8}
+        ]
+      }
+    },
+    "3": {
+      "systemId": 3,
+      "systemName": "TEST-SYS-01",
+      "cpu": {
+        "utilization": 92.3,
+        "cpuMs": 285.7,
+        "numCores": 12,
+        "cpw": 31500,
+        "trend": "critical"
+      },
+      "memory": {
+        "totalGB": 256,
+        "usedGB": 245.8,
+        "utilization": 96.0,
+        "faultingRate": 2.45,
+        "poolFaulting": {
+          "*BASE": 1.20,
+          "*MACHINE": 0.85,
+          "*INTERACT": 0.25,
+          "*SPOOL": 0.15
+        }
+      },
+      "disk": {
+        "armUtilization": 88.5,
+        "responseTime": 25.2,
+        "operations": 3250,
+        "readWriteRatio": 0.45,
+        "spaceUtilization": 91.7,
+        "cacheHitPercent": 78.2
+      },
+      "network": {
+        "ethernetUtilization": 78.5,
+        "packetsPerSec": 45820,
+        "bytesPerSec": 385000000
+      },
+      "response5250": {
+        "avgResponseTime": 0.850,
+        "peakResponseTime": 2.450,
+        "transactionsPerSec": 125
+      },
+      "jobs": {
+        "totalActive": 2845,
+        "batchActive": 1250,
+        "interactiveActive": 1595,
+        "cpuPercentByJob": [
+          {"jobName": "LOAD_TEST", "user": "LOADUSER", "cpuPercent": 35.2},
+          {"jobName": "STRESS_JOB", "user": "TESTUSER", "cpuPercent": 22.5},
+          {"jobName": "BATCH_PROC", "user": "BATCHUSER", "cpuPercent": 15.3},
+          {"jobName": "QZDASOINIT", "user": "QUSER", "cpuPercent": 8.2},
+          {"jobName": "BACKUP_RUN", "user": "QSYSOPR", "cpuPercent": 6.8}
+        ]
+      }
+    }
+  }
+}

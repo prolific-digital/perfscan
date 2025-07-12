@@ -1,0 +1,176 @@
+{
+  "alerts": [
+    {
+      "id": 1,
+      "systemId": 3,
+      "systemName": "TEST-SYS-01",
+      "type": "cpu_critical",
+      "severity": "critical",
+      "metric": "CPU Utilization",
+      "threshold": 90,
+      "currentValue": 92.3,
+      "message": "CPU utilization has exceeded 90% threshold",
+      "timestamp": "2025-07-12T10:15:00Z",
+      "acknowledged": false,
+      "acknowledgedBy": null,
+      "acknowledgedAt": null
+    },
+    {
+      "id": 2,
+      "systemId": 3,
+      "systemName": "TEST-SYS-01",
+      "type": "memory_critical",
+      "severity": "critical",
+      "metric": "Memory Utilization",
+      "threshold": 95,
+      "currentValue": 96.0,
+      "message": "Memory utilization has exceeded 95% threshold",
+      "timestamp": "2025-07-12T10:18:00Z",
+      "acknowledged": false,
+      "acknowledgedBy": null,
+      "acknowledgedAt": null
+    },
+    {
+      "id": 3,
+      "systemId": 2,
+      "systemName": "DEV-SYS-01",
+      "type": "disk_warning",
+      "severity": "warning",
+      "metric": "Disk Space",
+      "threshold": 80,
+      "currentValue": 82.5,
+      "message": "Disk space utilization approaching critical level",
+      "timestamp": "2025-07-12T09:45:00Z",
+      "acknowledged": true,
+      "acknowledgedBy": "jsmith",
+      "acknowledgedAt": "2025-07-12T09:50:00Z"
+    },
+    {
+      "id": 4,
+      "systemId": 1,
+      "systemName": "PROD-SYS-01",
+      "type": "response_time_warning",
+      "severity": "warning",
+      "metric": "5250 Response Time",
+      "threshold": 0.500,
+      "currentValue": 0.550,
+      "message": "Interactive response time degraded",
+      "timestamp": "2025-07-12T08:30:00Z",
+      "acknowledged": true,
+      "acknowledgedBy": "admin",
+      "acknowledgedAt": "2025-07-12T08:35:00Z"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "systemId": 1,
+      "systemName": "PROD-SYS-01",
+      "eventType": "system_change",
+      "category": "configuration",
+      "description": "Memory upgraded from 96GB to 128GB",
+      "timestamp": "2025-07-01T02:00:00Z",
+      "user": "admin",
+      "impact": "positive",
+      "details": {
+        "before": "96GB",
+        "after": "128GB",
+        "downtime": "30 minutes"
+      }
+    },
+    {
+      "id": 2,
+      "systemId": 1,
+      "systemName": "PROD-SYS-01",
+      "eventType": "application_deployment",
+      "category": "application",
+      "description": "ERP system upgraded to version 9.2",
+      "timestamp": "2025-06-15T22:00:00Z",
+      "user": "admin",
+      "impact": "neutral",
+      "details": {
+        "application": "ERP System",
+        "previousVersion": "9.1.5",
+        "newVersion": "9.2.0",
+        "deploymentDuration": "2 hours"
+      }
+    },
+    {
+      "id": 3,
+      "systemId": 2,
+      "systemName": "DEV-SYS-01",
+      "eventType": "performance_tuning",
+      "category": "optimization",
+      "description": "Database indexes rebuilt",
+      "timestamp": "2025-07-10T03:00:00Z",
+      "user": "mjohnson",
+      "impact": "positive",
+      "details": {
+        "tablesOptimized": 45,
+        "performanceGain": "15%"
+      }
+    },
+    {
+      "id": 4,
+      "systemId": 3,
+      "systemName": "TEST-SYS-01",
+      "eventType": "load_test",
+      "category": "testing",
+      "description": "Stress test initiated for new application",
+      "timestamp": "2025-07-12T09:00:00Z",
+      "user": "jsmith",
+      "impact": "negative",
+      "details": {
+        "testDuration": "4 hours",
+        "maxUsers": 5000,
+        "targetCPU": "95%"
+      }
+    }
+  ],
+  "alertRules": [
+    {
+      "id": 1,
+      "name": "CPU Critical",
+      "metric": "cpu_utilization",
+      "condition": "greater_than",
+      "threshold": 90,
+      "duration": "5 minutes",
+      "severity": "critical",
+      "enabled": true,
+      "notificationChannels": ["email", "dashboard"]
+    },
+    {
+      "id": 2,
+      "name": "Memory Warning",
+      "metric": "memory_utilization",
+      "condition": "greater_than",
+      "threshold": 85,
+      "duration": "10 minutes",
+      "severity": "warning",
+      "enabled": true,
+      "notificationChannels": ["dashboard"]
+    },
+    {
+      "id": 3,
+      "name": "Disk Space Critical",
+      "metric": "disk_space_utilization",
+      "condition": "greater_than",
+      "threshold": 90,
+      "duration": "immediate",
+      "severity": "critical",
+      "enabled": true,
+      "notificationChannels": ["email", "dashboard", "sms"]
+    },
+    {
+      "id": 4,
+      "name": "Response Time Degraded",
+      "metric": "response_5250",
+      "condition": "greater_than",
+      "threshold": 0.500,
+      "duration": "15 minutes",
+      "severity": "warning",
+      "enabled": true,
+      "notificationChannels": ["email", "dashboard"]
+    }
+  ]
+}

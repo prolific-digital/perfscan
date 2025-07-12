@@ -1,0 +1,120 @@
+.chat_main {
+    background: #fff;
+    margin: 5px 0;
+    border-radius: 4px;
+    // box-shadow: 0 0 5px 0 rgba(37, 117, 252, 0.2);
+    box-shadow: 0 0.25rem 1.5rem rgba(18, 38, 63, 0.03);
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    padding: 0.25rem;
+    flex: 1 1 auto;
+    border: 1px solid #edf2f9;
+
+    &.hide-chart {
+      display: none;
+    }
+
+    &.no_data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      overflow: auto;
+    }
+  }
+
+  .busyDay {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-content: flex-start;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 5px;
+    gap: 5px;
+    div {
+      background: #ffffff;
+      border: none;
+      border-radius: 2px;
+      padding: 2px;
+    }
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-content: center;
+    background-color: #bbdefb;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  .flex-container > div{
+    background: #ffecb3;
+    border: 3px solid #ffcc80;
+    border-radius: 5px;
+    padding: 8px;
+  }
+
+
+  .day { 
+    /* flex:1 1 auto; */
+   // flex-grow:1;
+    width: 90px;
+    text-align: center;
+
+    &.header {
+      font-weight: bold;
+      color:#000066
+    }
+  }
+			
+  .avg_peak { 
+    /* flex:1 1 auto; */
+    //flex-grow:1;
+    width: 100px;
+    text-align: center;
+
+    &.header {
+      font-weight: bold;
+      color:#000066
+    }
+  }
+			
+  .chart { 
+    /* flex:2 1 auto; */
+    //flex-grow:4;
+    width: 450px;
+    text-align: center;
+    &.header {
+      font-weight: bold;
+      color:#000066
+    }
+  }
+			
+  .sel { 
+    /* flex:1 1 auto; */
+    //flex-grow:1;
+    width: 90px;
+    text-align: center;
+
+    &.header {
+      font-weight: bold;
+      color:#000066
+    }
+  }

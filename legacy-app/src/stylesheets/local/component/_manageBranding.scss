@@ -1,0 +1,60 @@
+.manage-branding {
+    text-align: left;
+    padding-top: 20px;
+    .add-branding {
+      width: 100%;
+      margin-left: 5px;
+  
+      .btn-icon {
+        margin-bottom: 1rem;
+      }
+  
+      .sidebar-title {
+        text-align: left;
+        font-size: 1em;
+        color: #12263f;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+      }
+  
+      .form-options {
+        display: flex;
+        flex-direction: row;
+        margin: 0 -10px;
+        flex-wrap: wrap;
+        width: 100%;
+       
+        ;
+  
+        .form_group {
+          width: calc(15% - 20px);
+          margin: 0 10px 10px;
+          display: flex;
+          flex-direction: column;
+          .form-control {
+            height: 50px;
+          }
+        }
+      }
+      
+      .form_group {
+        width: calc(15% - 20px);
+        margin: 0 10px 10px;
+        display: flex;
+        flex-direction: column;
+        .form-control {
+          height: 50px;
+        }
+      }
+      
+      .btn-primary {
+        display: block;
+        margin: 1rem auto;
+      }
+
+      .help {
+        color: red;
+      }
+    }
+  }

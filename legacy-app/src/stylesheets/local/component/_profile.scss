@@ -1,0 +1,43 @@
+.profile_section {
+  .user_avtar {
+    img {
+      max-width: 2.18rem;
+      max-height: 2.18rem;
+      border-radius: 50px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
+  .profile_wrapper {
+    .profile_header {
+      border-bottom-width: 0px;
+      border-radius: 8px 8px 0 0;
+      .user_avatar img {
+        max-width: 2.18rem;
+        max-height: 2.18rem;
+        border-radius: 50px;
+        object-fit: cover;
+      }
+      .user_details {
+        margin-left: 0.75rem;
+        .user_name {
+          font-size: 0.8rem;
+          text-decoration: none;
+          font-weight: 500;
+          color: #000;
+        }
+        .user_designation {
+          font-size: 0.65rem;
+          font-weight: 400;
+          line-height: 1.1;
+          color: #8d8d8d;
+          text-decoration: none;
+        }
+      }
+    }
+    .other_links {
+      border-top: 1px solid #e3ebf6;
+      padding: 0.5rem 0;
+    }
+  }
+}

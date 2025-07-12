@@ -1,0 +1,102 @@
+[
+	{
+		"jobname": "XREFGOLD90",
+		"jobtype": "asyncios",
+		"total": "4.73"
+	},
+	{
+		"jobname": "QWCTJOBS",
+		"jobtype": "asyncios",
+		"total": "4.62"
+	},
+	{
+		"jobname": "XREFGOLD90",
+		"jobtype": "asyncios",
+		"total": "3.75"
+	},
+	{
+		"jobname": "QZRCSRVS",
+		"jobtype": "asyncios",
+		"total": "3.60"
+	},
+	{
+		"jobname": "QZRCSRVS",
+		"jobtype": "asyncios",
+		"total": "3.38"
+	},
+	{
+		"jobname": "QDBSRVXR",
+		"jobtype": "asyncios",
+		"total": "3.17"
+	},
+	{
+		"jobname": "QZRCSRVS",
+		"jobtype": "asyncios",
+		"total": "2.88"
+	},
+	{
+		"jobname": "QZRCSRVS",
+		"jobtype": "asyncios",
+		"total": "2.71"
+	},
+	{
+		"jobname": "QWCPJOBS",
+		"jobtype": "asyncios",
+		"total": "2.60"
+	},
+	{
+		"jobname": "QZRCSRVS",
+		"jobtype": "asyncios",
+		"total": "2.53"
+	},
+	{
+		"jobname": "SMPOL001",
+		"jobtype": "asyncios",
+		"total": "2.33"
+	},
+	{
+		"jobname": "MNTASK",
+		"jobtype": "asyncios",
+		"total": "2.30"
+	},
+	{
+		"jobname": "QDBFSTCCOL",
+		"jobtype": "asyncios",
+		"total": "1.42"
+	},
+	{
+		"jobname": "ADJMMRREQ",
+		"jobtype": "asyncios",
+		"total": "1.14"
+	},
+	{
+		"jobname": "ADJMMRREQ",
+		"jobtype": "asyncios",
+		"total": "1.13"
+	},
+	{
+		"jobname": "ADJMMRREQ",
+		"jobtype": "asyncios",
+		"total": "1.13"
+	},
+	{
+		"jobname": "ADJMMRREQ",
+		"jobtype": "asyncios",
+		"total": "1.13"
+	},
+	{
+		"jobname": "AUCACCESS1",
+		"jobtype": "asyncios",
+		"total": "0.89"
+	},
+	{
+		"jobname": "ADJMMRREQ",
+		"jobtype": "asyncios",
+		"total": "0.88"
+	},
+	{
+		"jobname": "AUCACCESS1",
+		"jobtype": "asyncios",
+		"total": "0.85"
+	}
+]

@@ -1,0 +1,102 @@
+[
+	{
+		"jobname": "QZDASOINIT",
+		"jobtype": "cpu",
+		"total": "5.41"
+	},
+	{
+		"jobname": "CFINT001",
+		"jobtype": "cpu",
+		"total": "3.29"
+	},
+	{
+		"jobname": "QZDASOINIT",
+		"jobtype": "cpu",
+		"total": "2.62"
+	},
+	{
+		"jobname": "QZDASOINIT",
+		"jobtype": "cpu",
+		"total": "2.13"
+	},
+	{
+		"jobname": "BATCHCHECK",
+		"jobtype": "cpu",
+		"total": "1.99"
+	},
+	{
+		"jobname": "QZDASOINIT",
+		"jobtype": "cpu",
+		"total": "1.86"
+	},
+	{
+		"jobname": "QZDASOINIT",
+		"jobtype": "cpu",
+		"total": "1.77"
+	},
+	{
+		"jobname": "ADJMMRPARS",
+		"jobtype": "cpu",
+		"total": "1.53"
+	},
+	{
+		"jobname": "ADJMMRPARS",
+		"jobtype": "cpu",
+		"total": "1.49"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.29"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.20"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.15"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.10"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.10"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.10"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.10"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.09"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.09"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "1.09"
+	},
+	{
+		"jobname": "QP0ZSPWP",
+		"jobtype": "cpu",
+		"total": "0.95"
+	}
+]

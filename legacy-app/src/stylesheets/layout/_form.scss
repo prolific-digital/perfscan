@@ -1,0 +1,48 @@
+.label {
+  font-size: 0.75rem;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+  color: #12263f;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #12263f;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  letter-spacing: 0.5px;
+  outline: none;
+}
+select.form-control {
+  appearance: auto;
+}
+.p-inputtext {
+  width: 100%;
+}
+
+.alert_updated_form_options {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.alert_label {
+  font-size: large;
+}
+
+.alert_updated_form_group {
+  margin-top: 0.5rem;
+}
+
+.alert_inputs {
+  width: 15%;
+  margin-right: 0.7rem;
+  margin-top: 0.8rem;
+}

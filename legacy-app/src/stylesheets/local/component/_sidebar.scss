@@ -1,0 +1,217 @@
+.sidebar_main {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 250px;
+  overflow-y: auto;
+  z-index: 1030;
+  height: 100vh;
+  transition: all 0.2s;
+  background-color: #fff;
+  border-right: 1px solid #e3ebf6;
+  display: flex;
+
+  flex-direction: column;
+  align-items: stretch;
+  .navbar-brand-main {
+    display: block;
+    text-align: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    filter: none;
+    color: #12263f;
+    img {
+      max-width: 100%;
+      max-height: 3rem;
+      min-height: 3rem;
+    }
+  }
+  .user_image{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    justify-content: space-between;
+    width: 100%;
+    // text-align: center;
+    gap: 30px;
+    .user_image_styling{
+      max-width: 2rem;
+      max-height: 3rem;
+      border-radius: 15px;
+      object-fit: cover;
+      height: 2rem;
+      margin-bottom: 10px;
+      margin-left: 1.7rem;
+    }
+    .user_profile{
+      width: 78%;
+    font-size: 1rem;
+    max-height: 18px;
+    font-weight: 600;
+    padding-right: 1.5rem;
+
+    }
+  }
+}
+// Navigation Menu Vertical
+.vertical-nav-menu {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: " ";
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .metismenu-container,
+  .metismenu-item {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .metismenu-container {
+    list-style: none;
+
+    &:before {
+      opacity: 0;
+      transition: opacity 300ms;
+    }
+
+    .metismenu-link {
+      transition: transform 0.2s, height 300ms, color 300ms,
+        background-color 300ms, opacity 300ms;
+      display: block;
+      line-height: 2.4rem;
+      height: 2.5rem;
+      padding: 0rem 1.5rem 0rem 2.75rem;
+      position: relative;
+      border-radius: 0.25rem;
+      color: #6e84a3;
+      white-space: nowrap;
+      font-size: 0.9rem;
+      font-weight: 400;
+      text-decoration: none;
+      user-select: none;
+      border-radius: 0;
+      &:hover,
+      &.has-active-child,
+      &.active {
+        text-decoration: none;
+        color: #12263f;
+        font-weight: 600;
+        .metismenu-icon,
+        .metismenu-state-icon {
+          opacity: 1;
+        }
+      }
+    }
+
+    i.metismenu-state-icon,
+    i.metismenu-icon {
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      line-height: 24px;
+      position: absolute;
+      left: 15px;
+      top: 7px;
+      margin-top: 0;
+      font-size: 0.9rem;
+      opacity: 0.3;
+      transition: color 300ms;
+    }
+
+    i.metismenu-state-icon {
+      transition: transform 300ms;
+      left: auto;
+      right: 10px;
+      top: 10px;
+
+      &.rotate-minus-90 {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .metismenu-container {
+      transition: padding 300ms;
+
+      &.visible {
+        & > .metismenu-item > .metismenu-link {
+          height: 2.3rem;
+          line-height: 2.3rem;
+          padding-left: 3rem;
+          color: #6e84a3;
+          font-size: 0.8125rem;
+          user-select: none;
+          &:hover {
+            color: #12263f;
+          }
+
+          .metismenu-icon {
+            display: none;
+          }
+
+          &.active {
+            color: #12263f;
+            position: relative;
+            font-weight: 600;
+            // background: #d4ecf9;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0rem;
+              bottom: 0rem;
+              // right: 0;
+              left: 0;
+              right: auto;
+              border-left: 3px solid #2c7be5;
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .metismenu-item > .metismenu-link {
+        height: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}
+// //  Custom, iPhone Retina
+// @media only screen and (max-width: 320px) {
+// }
+
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width: 480px) {
+// }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .sidebar_main {
+    transform: translateX(-100%);
+    margin: 0;
+    top: 65px;
+    .navbar-brand-main {
+      display: none;
+    }
+    &.active {
+      transform: translateX(0%);
+      max-width: unset;
+    }
+  }
+}
+
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width: 992px) {
+// }
+
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width: 1200px) {
+// }

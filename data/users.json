@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@perfscan.com",
+      "fullName": "System Administrator",
+      "role": "admin",
+      "department": "IT Operations",
+      "permissions": [
+        "view_all_systems",
+        "edit_all_systems",
+        "manage_users",
+        "generate_reports",
+        "configure_alerts",
+        "manage_branding",
+        "schedule_reports",
+        "capacity_planning"
+      ],
+      "preferences": {
+        "theme": "light",
+        "defaultView": "enterprise-server",
+        "dateFormat": "MM/DD/YYYY",
+        "timeZone": "America/Chicago",
+        "emailNotifications": true
+      },
+      "lastLogin": "2025-07-12T09:15:00Z",
+      "createdAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "username": "jsmith",
+      "email": "john.smith@company.com",
+      "fullName": "John Smith",
+      "role": "operator",
+      "department": "System Operations",
+      "permissions": [
+        "view_all_systems",
+        "generate_reports",
+        "view_alerts"
+      ],
+      "preferences": {
+        "theme": "light",
+        "defaultView": "historical-data",
+        "dateFormat": "MM/DD/YYYY",
+        "timeZone": "America/Chicago",
+        "emailNotifications": true
+      },
+      "lastLogin": "2025-07-12T08:45:00Z",
+      "createdAt": "2024-03-20T14:30:00Z"
+    },
+    {
+      "id": 3,
+      "username": "mjohnson",
+      "email": "mary.johnson@company.com",
+      "fullName": "Mary Johnson",
+      "role": "analyst",
+      "department": "Performance Analysis",
+      "permissions": [
+        "view_all_systems",
+        "generate_reports",
+        "capacity_planning",
+        "view_alerts",
+        "schedule_reports"
+      ],
+      "preferences": {
+        "theme": "dark",
+        "defaultView": "capacity-analysis",
+        "dateFormat": "DD/MM/YYYY",
+        "timeZone": "America/New_York",
+        "emailNotifications": false
+      },
+      "lastLogin": "2025-07-11T16:30:00Z",
+      "createdAt": "2024-02-10T09:00:00Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": "admin",
+      "name": "Administrator",
+      "description": "Full system access and management capabilities",
+      "level": 1
+    },
+    {
+      "id": "analyst",
+      "name": "Performance Analyst",
+      "description": "Analysis and reporting capabilities",
+      "level": 2
+    },
+    {
+      "id": "operator",
+      "name": "System Operator",
+      "description": "View and basic reporting capabilities",
+      "level": 3
+    },
+    {
+      "id": "viewer",
+      "name": "Read-Only User",
+      "description": "View-only access",
+      "level": 4
+    }
+  ]
+}

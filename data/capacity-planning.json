@@ -1,0 +1,116 @@
+{
+  "systemId": 1,
+  "systemName": "PROD-SYS-01",
+  "analysisDate": "2025-07-12",
+  "current": {
+    "system": {
+      "model": "9009-22A",
+      "cpw": 25000,
+      "maxCpw": 30000,
+      "cores": 8,
+      "memory": 128
+    },
+    "utilization": {
+      "avgCpuPercent": 67.5,
+      "peakCpuPercent": 98.5,
+      "avgCpwUsed": 18700,
+      "peakCpwUsed": 24625,
+      "cpwUtilization": 74.8
+    },
+    "growth": {
+      "monthlyRate": 3.2,
+      "yearlyRate": 38.4
+    }
+  },
+  "projections": {
+    "sixMonths": {
+      "expectedCpuPercent": 78.5,
+      "expectedCpwUsed": 21625,
+      "expectedCpwUtilization": 86.5,
+      "capacityStatus": "warning"
+    },
+    "oneYear": {
+      "expectedCpuPercent": 92.5,
+      "expectedCpwUsed": 25875,
+      "expectedCpwUtilization": 103.5,
+      "capacityStatus": "critical"
+    },
+    "twoYears": {
+      "expectedCpuPercent": 128.5,
+      "expectedCpwUsed": 35875,
+      "expectedCpwUtilization": 143.5,
+      "capacityStatus": "exceeded"
+    }
+  },
+  "recommendations": {
+    "immediate": {
+      "action": "Monitor closely",
+      "details": "System is approaching capacity limits. Consider optimization."
+    },
+    "sixMonths": {
+      "action": "Plan upgrade",
+      "details": "System will reach warning threshold. Begin upgrade planning.",
+      "suggestedModels": [
+        {
+          "model": "9009-42A",
+          "cpw": 35000,
+          "cores": 12,
+          "estimatedCost": 125000
+        },
+        {
+          "model": "9009-41G",
+          "cpw": 40000,
+          "cores": 16,
+          "estimatedCost": 175000
+        }
+      ]
+    },
+    "oneYear": {
+      "action": "Upgrade required",
+      "details": "System will exceed capacity. Upgrade is necessary."
+    }
+  },
+  "scenarios": [
+    {
+      "name": "Conservative Growth",
+      "growthRate": 2.0,
+      "timeToCapacity": "18 months",
+      "recommendedAction": "Monitor quarterly"
+    },
+    {
+      "name": "Expected Growth",
+      "growthRate": 3.2,
+      "timeToCapacity": "11 months",
+      "recommendedAction": "Plan upgrade within 6 months"
+    },
+    {
+      "name": "Aggressive Growth",
+      "growthRate": 5.0,
+      "timeToCapacity": "7 months",
+      "recommendedAction": "Immediate upgrade planning required"
+    }
+  ],
+  "busyDays": [
+    {
+      "date": "2025-06-30",
+      "dayOfWeek": "Sunday",
+      "avgCpuPercent": 95.2,
+      "peakCpuPercent": 99.8,
+      "reason": "Month-end processing"
+    },
+    {
+      "date": "2025-07-01",
+      "dayOfWeek": "Monday",
+      "avgCpuPercent": 92.5,
+      "peakCpuPercent": 98.5,
+      "reason": "Quarter-start processing"
+    },
+    {
+      "date": "2025-06-15",
+      "dayOfWeek": "Saturday",
+      "avgCpuPercent": 88.7,
+      "peakCpuPercent": 96.2,
+      "reason": "Backup operations"
+    }
+  ]
+}

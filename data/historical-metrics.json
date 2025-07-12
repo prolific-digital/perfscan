@@ -1,0 +1,91 @@
+{
+  "systemId": 1,
+  "systemName": "PROD-SYS-01",
+  "dateRange": {
+    "start": "2025-06-01T00:00:00Z",
+    "end": "2025-07-12T00:00:00Z"
+  },
+  "metrics": {
+    "cpu": {
+      "hourly": [
+        {"timestamp": "2025-06-01T00:00:00Z", "utilization": 45.2, "cpuMs": 85.3, "cpw": 15200},
+        {"timestamp": "2025-06-01T01:00:00Z", "utilization": 42.8, "cpuMs": 82.1, "cpw": 14800},
+        {"timestamp": "2025-06-01T02:00:00Z", "utilization": 38.5, "cpuMs": 75.2, "cpw": 13500},
+        {"timestamp": "2025-06-01T03:00:00Z", "utilization": 35.2, "cpuMs": 68.9, "cpw": 12800}
+      ],
+      "daily": [
+        {"date": "2025-06-01", "avgUtilization": 52.3, "peakUtilization": 78.5, "avgCpw": 16500},
+        {"date": "2025-06-02", "avgUtilization": 55.8, "peakUtilization": 82.3, "avgCpw": 17200},
+        {"date": "2025-06-03", "avgUtilization": 58.2, "peakUtilization": 85.7, "avgCpw": 17800},
+        {"date": "2025-06-04", "avgUtilization": 61.5, "peakUtilization": 88.2, "avgCpw": 18200},
+        {"date": "2025-06-05", "avgUtilization": 63.8, "peakUtilization": 91.5, "avgCpw": 18500}
+      ],
+      "weekly": [
+        {"week": "2025-W23", "avgUtilization": 58.3, "peakUtilization": 91.5, "avgCpw": 17500},
+        {"week": "2025-W24", "avgUtilization": 62.7, "peakUtilization": 94.2, "avgCpw": 18200},
+        {"week": "2025-W25", "avgUtilization": 65.4, "peakUtilization": 96.8, "avgCpw": 18700},
+        {"week": "2025-W26", "avgUtilization": 67.5, "peakUtilization": 98.5, "avgCpw": 19000}
+      ]
+    },
+    "memory": {
+      "daily": [
+        {"date": "2025-06-01", "avgUtilization": 68.5, "peakUtilization": 75.2, "avgFaultingRate": 0.08},
+        {"date": "2025-06-02", "avgUtilization": 70.2, "peakUtilization": 78.5, "avgFaultingRate": 0.09},
+        {"date": "2025-06-03", "avgUtilization": 71.8, "peakUtilization": 82.3, "avgFaultingRate": 0.11},
+        {"date": "2025-06-04", "avgUtilization": 73.5, "peakUtilization": 85.7, "avgFaultingRate": 0.12},
+        {"date": "2025-06-05", "avgUtilization": 75.2, "peakUtilization": 88.2, "avgFaultingRate": 0.15}
+      ]
+    },
+    "disk": {
+      "daily": [
+        {"date": "2025-06-01", "avgArmUtil": 35.2, "avgResponseTime": 6.5, "totalOperations": 125000000},
+        {"date": "2025-06-02", "avgArmUtil": 38.5, "avgResponseTime": 7.2, "totalOperations": 132000000},
+        {"date": "2025-06-03", "avgArmUtil": 41.2, "avgResponseTime": 7.8, "totalOperations": 138000000},
+        {"date": "2025-06-04", "avgArmUtil": 43.8, "avgResponseTime": 8.2, "totalOperations": 145000000},
+        {"date": "2025-06-05", "avgArmUtil": 45.2, "avgResponseTime": 8.5, "totalOperations": 152000000}
+      ]
+    },
+    "response5250": {
+      "daily": [
+        {"date": "2025-06-01", "avgResponseTime": 0.085, "peakResponseTime": 0.250, "totalTransactions": 7500000},
+        {"date": "2025-06-02", "avgResponseTime": 0.092, "peakResponseTime": 0.320, "totalTransactions": 7800000},
+        {"date": "2025-06-03", "avgResponseTime": 0.098, "peakResponseTime": 0.380, "totalTransactions": 8200000},
+        {"date": "2025-06-04", "avgResponseTime": 0.115, "peakResponseTime": 0.420, "totalTransactions": 8500000},
+        {"date": "2025-06-05", "avgResponseTime": 0.125, "peakResponseTime": 0.450, "totalTransactions": 8800000}
+      ]
+    },
+    "topJobs": {
+      "weekly": [
+        {
+          "week": "2025-W23",
+          "topCpuJobs": [
+            {"jobName": "QZDASOINIT", "user": "QUSER", "avgCpuPercent": 15.2, "totalCpuHours": 252.5},
+            {"jobName": "BACKUP_JOB", "user": "QSYSOPR", "avgCpuPercent": 10.5, "totalCpuHours": 176.4},
+            {"jobName": "APP_SERVER1", "user": "APPUSER", "avgCpuPercent": 8.3, "totalCpuHours": 139.4},
+            {"jobName": "QBATCH", "user": "QSYS", "avgCpuPercent": 7.2, "totalCpuHours": 120.9},
+            {"jobName": "REPORT_GEN", "user": "RPTUSER", "avgCpuPercent": 5.8, "totalCpuHours": 97.4}
+          ]
+        }
+      ]
+    }
+  },
+  "trends": {
+    "cpu": {
+      "trend": "increasing",
+      "growthRate": 3.2,
+      "projectedPeak": 95.5,
+      "projectedDate": "2025-08-15"
+    },
+    "memory": {
+      "trend": "stable",
+      "growthRate": 1.5,
+      "projectedPeak": 82.5,
+      "projectedDate": "2025-10-01"
+    },
+    "disk": {
+      "trend": "increasing",
+      "growthRate": 4.8,
+      "projectedFull": "2025-09-20"
+    }
+  }
+}

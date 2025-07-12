@@ -1,0 +1,27 @@
+.add-events {
+  width: 100%;
+  .btn-icon {
+    margin-bottom: 1rem;
+  }
+  .sidebar-title {
+    text-align: left;
+    font-size: 1em;
+    color: #12263f;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  .form-options {
+    display: flex;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+    .form_group {
+      width: calc(33.3333333333% - 20px);
+      margin: 0 10px 10px;
+    }
+  }
+  .btn-primary {
+    display: block;
+    margin: 1rem auto;
+  }
+}

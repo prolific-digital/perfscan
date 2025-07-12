@@ -1,0 +1,108 @@
+{
+  "systems": [
+    {
+      "id": 1,
+      "name": "PROD-SYS-01",
+      "type": "IBM Power System S922",
+      "serial": "78-1234A",
+      "model": "9009-22A",
+      "osVersion": "IBM i 7.5",
+      "location": "Data Center 1",
+      "status": "active",
+      "health": "good",
+      "ipAddress": "10.0.1.100",
+      "frames": [
+        {
+          "id": 1,
+          "name": "Frame-01",
+          "cpw": 25000,
+          "activatedCpw": 22000,
+          "frameCpw": 30000
+        }
+      ],
+      "lpars": [
+        {
+          "id": 1,
+          "name": "PROD-LPAR-01",
+          "cores": 8,
+          "memory": 128,
+          "cpuPool": 1
+        },
+        {
+          "id": 2,
+          "name": "PROD-LPAR-02",
+          "cores": 4,
+          "memory": 64,
+          "cpuPool": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "DEV-SYS-01",
+      "type": "IBM Power System S914",
+      "serial": "78-5678B",
+      "model": "9009-41G",
+      "osVersion": "IBM i 7.4",
+      "location": "Data Center 2",
+      "status": "active",
+      "health": "warning",
+      "ipAddress": "10.0.2.100",
+      "frames": [
+        {
+          "id": 2,
+          "name": "Frame-02",
+          "cpw": 15000,
+          "activatedCpw": 12000,
+          "frameCpw": 18000
+        }
+      ],
+      "lpars": [
+        {
+          "id": 3,
+          "name": "DEV-LPAR-01",
+          "cores": 4,
+          "memory": 64,
+          "cpuPool": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "TEST-SYS-01",
+      "type": "IBM Power System S924",
+      "serial": "78-9012C",
+      "model": "9009-42A",
+      "osVersion": "IBM i 7.5",
+      "location": "Data Center 1",
+      "status": "active",
+      "health": "critical",
+      "ipAddress": "10.0.3.100",
+      "frames": [
+        {
+          "id": 3,
+          "name": "Frame-03",
+          "cpw": 35000,
+          "activatedCpw": 34000,
+          "frameCpw": 40000
+        }
+      ],
+      "lpars": [
+        {
+          "id": 4,
+          "name": "TEST-LPAR-01",
+          "cores": 12,
+          "memory": 256,
+          "cpuPool": 1
+        },
+        {
+          "id": 5,
+          "name": "TEST-LPAR-02",
+          "cores": 6,
+          "memory": 128,
+          "cpuPool": 2
+        }
+      ]
+    }
+  ]
+}
