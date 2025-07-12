@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useSelector, useDispatch } from 'react-redux';
 import { 
   selectUser, 
@@ -54,13 +55,12 @@ export default function Header() {
             </button>
             
             <div className="flex items-center ml-4">
-              <img
+              <Image
                 src="/perfscan-logo.png"
                 alt="PerfScan"
+                width={32}
+                height={32}
                 className="h-8 w-auto"
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                }}
               />
               <h1 className="ml-3 text-xl font-semibold text-gray-900">
                 PerfScan
