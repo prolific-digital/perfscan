@@ -68,11 +68,14 @@ function MetricCard({ title, value, unit, icon: Icon, trend, status, description
 }
 
 export default function MetricsOverview() {
-  const systems = useSelector(selectAllSystems);
-  const allMetrics = useSelector(selectRealtimeMetrics);
+  const systems = useSelector(selectAllSystems) || [];
+  const allMetrics = useSelector(selectRealtimeMetrics) || {};
   
   // Calculate aggregate metrics across all systems
   const aggregateMetrics = systems.reduce((acc, system) => {
+    // Safety check for system object
+    if (!system || !system.id) return acc;
+    
     const metrics = allMetrics[system.id];
     
     if (metrics) {
